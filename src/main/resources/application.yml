@@ -1,10 +1,9 @@
 server:
-  port: 8888 #convenção usar a porta 8888 para config server
-
+   port: 8888 #convenção usar a porta 8888 para config server
+  
 spring:
   application:
     name: spring-cloud-config-server
   profiles:
     active:
-    - native
-  
+      - native
