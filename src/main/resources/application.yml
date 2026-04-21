@@ -4,6 +4,17 @@ server:
 spring:
   application:
     name: spring-cloud-config-server
-  profiles:
-    active:
-      - native
+#  profiles: # apontar para o arquivo local
+#    active:
+#      - native
+  # apontar para o GITHUB
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/thi-rodrigues/config-server-global
+          search-paths: 'greeting-service*'
+#          username: username
+#          password: password
+          default-label: main #apontar para qual a branch
+#

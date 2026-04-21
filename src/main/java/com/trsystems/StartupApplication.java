@@ -8,7 +8,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @EnableConfigServer
 /* @EnableConfigServer 
  * Transforma sua aplicação em um servidor central de configurações.
- * Habilita o Config Server dp Spring Cloud Config
+ * Habilita o Config Server do Spring Cloud Config
  */ 
 public class StartupApplication {
 
